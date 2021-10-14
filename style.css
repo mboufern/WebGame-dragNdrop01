@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Game{
+    background: rgb(163, 219, 190);
+    height: 100vh;
+}
+
+
+.scores{
+    display: flex;
+    flex-direction: row;
+    background: rgb(157, 207, 181);
+    height: 27vh;
+}
+.score{
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-shadow: rgba(40, 73, 58, 0.596) 0px 0px 3px;
+    margin: auto;
+    width: 150px;
+}
+#score1, #score2{
+    font-size: 20px;
+    text-shadow: rgba(52, 105, 81, 0.212) 0px 0px 0px;
+}
+#result{
+    text-align: center;
+    font-size: 25px;
+}
+
+.holders{
+    display: flex;
+    flex-direction: row;
+    height: 39vh;
+}
+.holder{
+    margin: auto;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.empty{
+    box-sizing: border-box;
+    margin: auto;
+    width: 150px;
+    height: 210px;
+    background: rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    -webkit-transition: opacity 500ms;
+}
+.enemy{
+    
+    margin: auto;
+    width: 150px;
+    height: 210px;
+    border-radius: 10px;
+    border: dotted rgba(49, 14, 14, 0.5) 5px;
+    opacity: 1;
+    -webkit-transition: opacity 500ms;
+}
+.dunow{
+    position: absolute;
+    width: 150px;
+    height: 210px;
+    border-radius: 10px;
+}
+.hover{
+    opacity: 0.5;
+    border: dashed 10px white;
+}
+.oppout{
+    opacity: 0;
+}
+
+.deck{
+    margin: 0px 30%;
+    display: flex;
+    flex-direction: row;
+    height: 34vh;
+    width: 40%;
+    background: rgba(22, 65, 50, 0.192);
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    right: auto;
+    left: auto;
+    bottom: 0px;
+    transition: bottom 800ms ease;
+}
+.dickout{
+    bottom: -300px;
+}
+.deckScisor, .deckPaper, .deckRock{
+    margin: auto;
+    width: 150px;
+    height: 210px;
+    border: solid 5px rgba(50, 63, 56, 0.527);
+    background: rgb(199, 161, 90);
+    border-radius: 10px;
+}
+.rock,.paper,.scisor{
+    background: rgb(61, 61, 66);
+    width: 150px;
+    height: 210px;
+    position: absolute;
+    border-radius: 10px;
+}
